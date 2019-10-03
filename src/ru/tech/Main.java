@@ -1,7 +1,5 @@
 package ru.tech;
 
-import org.w3c.dom.stylesheets.LinkStyle;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -19,6 +17,14 @@ public class Main {
             System.out.println(fish1.high);
             System.out.println(fish1.speed);
             System.out.println(fish1.weigth);
+        }
+        fish.move();
+        System.out.println("Poly");
+        List<Animal> animals = new ArrayList<>();
+        animals.add(fish);
+        animals.add(dog);
+        for (Animal animal: animals) {
+            animal.move();
         }
     }
 
